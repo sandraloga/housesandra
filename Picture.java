@@ -15,7 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    private Circle sun2;
+    private Circle pradera;
     
 
     /**
@@ -51,19 +51,14 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("blue");
+        sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
         
-        sun2 = new Circle;
-        sun2.changeColor("green");
-        sun2.moveHorizontal(150);
-        sun2.moveVertical(-50);
-        sun2.changeSize(80);
-        sun2.makeVisible;
         
+       
     }
 
     /**
@@ -93,4 +88,5 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+
 }
