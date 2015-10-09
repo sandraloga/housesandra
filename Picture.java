@@ -57,6 +57,13 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
+        pradera = new Circle();
+        pradera.changeColor("green");
+        pradera.moveHorizontal(-550);
+        pradera.moveVertical(160);
+        pradera.changeSize(1200);
+        pradera.makeVisible();
+        
         
        
     }
