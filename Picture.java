@@ -57,6 +57,8 @@ public class Picture
         pradera.makeVisible();
         
         sun.slowMoveVertical(160);
+        setBlackAndWhite();
+        pradera.changeColor("blacck");
     }
 
     /**
