@@ -64,6 +64,7 @@ public class Picture
         pradera.changeSize(1200);
         pradera.makeVisible();
         
+        sun.slowMoveVertical(120);
         
        
     }
