@@ -16,12 +16,62 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle pradera;
+    private Person persona;
+    
  
 
     /**
      * Constructor for objects of class Picture
      */
-    public void moveSun()
+    public void movePerson()
+    {
+        wall = new Square();
+        wall.moveHorizontal(-140);
+        wall.moveVertical(20);
+        wall.changeSize(120);
+        wall.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-120);
+        window.moveVertical(40);
+        window.changeSize(40);
+        window.makeVisible();
+
+        roof = new Triangle();  
+        roof.changeSize(60, 180);
+        roof.moveHorizontal(20);
+        roof.moveVertical(-60);
+        roof.makeVisible();
+
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-80);
+        sun.changeSize(80);
+        sun.makeVisible();
+        
+        pradera = new Circle();
+        pradera.changeColor("green");
+        pradera.moveHorizontal(-550);
+        pradera.moveVertical(160);
+        pradera.changeSize(1200);
+        pradera.makeVisible();
+        
+        sun.slowMoveVertical(160);
+        setBlackAndWhite();
+        pradera.changeColor("black");
+        
+        persona = new Person();
+        persona.moveHorizontal(-265);
+        persona.moveVertical(30);
+        persona.makeVisible();
+        persona.slowMoveHorizontal(140);
+        
+    }  
+    
+  public void moveSun()
+  
     {
          wall = new Square();
         wall.moveHorizontal(-140);
