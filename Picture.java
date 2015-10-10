@@ -16,7 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle pradera;
-    
+ 
 
     /**
      * Constructor for objects of class Picture
@@ -58,7 +58,7 @@ public class Picture
         
         sun.slowMoveVertical(160);
         setBlackAndWhite();
-        pradera.changeColor("blacck");
+        pradera.changeColor("black");
     }
 
     /**
